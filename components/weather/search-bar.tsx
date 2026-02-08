@@ -8,13 +8,36 @@ interface SearchBarProps {
 }
 
 export function SearchBar({ onSearch }: SearchBarProps) {
-    const [city, setcity] = useState('');
+    const [city, setCity] = useState('');
     const backgroundColor = useThemeColor({}, 'background');
     const textColor = useThemeColor({}, 'text');
     const iconColor = useThemeColor({}, 'icon');
+
+    const handleSearch = () => {
+        if (city.trim()) {
+            onSearch(city.trim());
+            setCity('');
+        }
+    };
+
+    return (
+        <View style={[styles.container, { backgroundColor }]}>
+            <TextInput
+                style={[styles.input, { color: textColor }]}
+                placeholder="Search city..."
+                placeholderTextColor={iconColor}
+                value={city}
+                onChangeText={setCity}
+                onSubmitEditing={handleSearch}
+                returnKeyType="search"
+            />
+            <TouchableOpacity onPress={handleSearch} style={styles.searchButton}>
+                <IconSymbol name="paperplane.fill" size={24} color={iconColor} />
+            </TouchableOpacity>
+        </View>
+    );
+
 }
-
-
 
 const styles = StyleSheet.create({
     container: {
