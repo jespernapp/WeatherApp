@@ -21,7 +21,7 @@ const transformWeatherData = (data: any): WeatherData => ({
 });
 
 const transformForecastData = (data: any): ForecastDay[] => {
-    const dailyForecasts: { [key: string]: any } = [];
+    const dailyForecasts: { [key: string]: any } = {};
 
     data.list.forEach((item: any) => {
         const date = item.dt_txt.split(' ')[0];
