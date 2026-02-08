@@ -1,5 +1,5 @@
 const API_KEY = process.env.EXPO_PUBLIC_WEATHER_API_KEY;
-const BASE_URL = 'https://api.openweathermap.org/data/2.5/';
+const BASE_URL = 'https://api.openweathermap.org/data/2.5';
 
 export async function fetchWeatherByCoordinates(lat: number, lon: number) {
     try {
