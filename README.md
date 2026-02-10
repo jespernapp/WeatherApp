@@ -4,7 +4,7 @@ A beautiful, cross-platform weather application built with React Native and Expo
 
 ## Screenshot
 
-![Weather App Screenshot](./Weather-app-screenshot.png)
+<img src="./Weather-app-screenshot.png" alt="Weather app screenshot" width="300" height="600">
 
 
 ## Features
