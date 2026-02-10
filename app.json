@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "NewNativeTestApp",
-    "slug": "NewNativeTestApp",
+    "name": "WeatherApp",
+    "slug": "weatherapp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "newnativetestapp",
+    "scheme": "weatherapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {

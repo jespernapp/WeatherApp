@@ -4,17 +4,18 @@ A beautiful, cross-platform weather application built with React Native and Expo
 
 ## Screenshot
 
+<p align="center">
 <img src="./Weather-app-screenshot.png" alt="Weather app screenshot" width="300" height="600">
-
+</p>
 
 ## Features
 
--  **Location-based weather** - Automatically detects your location and displays current weather
--  **City search** - Search for weather in any city around the world
--  **5-day forecast** - View upcoming weather predictions
--  **Dark mode support** - Seamless light and dark theme switching
--  **Cross-platform** - Works on iOS, Android, and web
--  **Pull to refresh** - Update weather data with a simple swipe down
+- **Location-based weather** - Automatically detects your location and displays current weather
+- **City search** - Search for weather in any city around the world
+- **5-day forecast** - View upcoming weather predictions
+- **Dark mode support** - Seamless light and dark theme switching
+- **Cross-platform** - Works on iOS, Android, and web
+- **Pull to refresh** - Update weather data with a simple swipe down
 
 ## Tech Stack
 
@@ -35,26 +36,30 @@ A beautiful, cross-platform weather application built with React Native and Expo
 ### Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone <your-repo-url>
    cd NewNativeTestApp
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Set up your API key**
-   
+
    Create a `.env` file in the project root:
+
    ```
    EXPO_PUBLIC_WEATHER_API_KEY=your_openweathermap_api_key_here
    ```
-   
+
    Get your free API key from [OpenWeatherMap](https://openweathermap.org/api)
 
 4. **Start the app**
+
    ```bash
    npx expo start
    ```
@@ -96,6 +101,7 @@ types/                # TypeScript type definitions
 ## API Reference
 
 This app uses the [OpenWeatherMap API](https://openweathermap.org/api):
+
 - Current Weather Data
 - 5 Day / 3 Hour Forecast
 
