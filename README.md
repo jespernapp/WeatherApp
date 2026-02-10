@@ -1,6 +1,6 @@
 # Weather App 🌤️
 
-A beautiful, cross-platform weather application built with React Native and Expo. Get real-time weather information for your current location or search for any city worldwide.
+A cross-platform weather application built with React Native and Expo. Get real-time weather information for your current location or search for any city worldwide.
 
 ## Screenshot
 
