@@ -82,7 +82,9 @@ const styles = StyleSheet.create({
     temperature: {
         fontSize: 72,
         fontWeight: 'bold',
-        marginBottom: 8,        
+        marginBottom: 8,
+        lineHeight: 84,
+
     },
     condition: {
         marginBottom: 4,
@@ -97,7 +99,7 @@ const styles = StyleSheet.create({
         justifyContent: 'space-around',
         paddingTop: 20,
         borderTopWidth: 1,
-        borderTopColor: 'rgba(128, 128, 128, 0.2)',  
+        borderTopColor: 'rgba(128, 128, 128, 0.2)',
     },
     detailItem: {
         alignItems: 'center',
@@ -111,4 +113,7 @@ const styles = StyleSheet.create({
         fontSize: 18,
         fontWeight: '600',
     },
+    locationContainer: {
+        marginBottom: 20,
+    }
 });
