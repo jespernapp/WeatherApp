@@ -1,50 +1,109 @@
-# Welcome to your Expo app 👋
+# Weather App 🌤️
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A beautiful, cross-platform weather application built with React Native and Expo. Get real-time weather information for your current location or search for any city worldwide.
 
-## Get started
+## Screenshot
 
-1. Install dependencies
+![Weather App Screenshot](./screenshot.png)
+*Add your app screenshot here*
 
+## Features
+
+-  **Location-based weather** - Automatically detects your location and displays current weather
+-  **City search** - Search for weather in any city around the world
+-  **5-day forecast** - View upcoming weather predictions
+-  **Dark mode support** - Seamless light and dark theme switching
+-  **Cross-platform** - Works on iOS, Android, and web
+-  **Pull to refresh** - Update weather data with a simple swipe down
+
+## Tech Stack
+
+- **React Native** - Mobile framework
+- **Expo** - Development platform
+- **TypeScript** - Type-safe development
+- **OpenWeatherMap API** - Weather data provider
+- **Expo Location** - GPS and location services
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v16 or higher)
+- npm or yarn
+- Expo Go app (for testing on physical devices)
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone <your-repo-url>
+   cd NewNativeTestApp
+   ```
+
+2. **Install dependencies**
    ```bash
    npm install
    ```
 
-2. Start the app
+3. **Set up your API key**
+   
+   Create a `.env` file in the project root:
+   ```
+   EXPO_PUBLIC_WEATHER_API_KEY=your_openweathermap_api_key_here
+   ```
+   
+   Get your free API key from [OpenWeatherMap](https://openweathermap.org/api)
 
+4. **Start the app**
    ```bash
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+5. **Run on your device**
+   - Scan the QR code with Expo Go (Android) or Camera app (iOS)
+   - Or press `a` for Android emulator
+   - Or press `i` for iOS simulator
+   - Or press `w` for web browser
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Project Structure
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+app/                    # Main application screens
+  (tabs)/              # Tab navigation group
+    index.tsx          # Home/Weather screen
+    explore.tsx        # Info screen
+components/            # Reusable UI components
+  weather/            # Weather-specific components
+    weather-card.tsx   # Current weather display
+    search-bar.tsx     # City search input
+    forecast-item.tsx  # Forecast day item
+hooks/                # Custom React hooks
+  use-weather.ts      # Weather data fetching
+  use-location.ts     # GPS location handling
+services/             # API services
+  weather-api.ts      # OpenWeatherMap API calls
+types/                # TypeScript type definitions
+  weather.ts          # Weather data types
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Usage
 
-## Learn more
+- **Current Location**: The app automatically requests location permission and displays weather for your area
+- **Search**: Type a city name in the search bar and press enter
+- **Refresh**: Pull down on the screen to refresh weather data
+- **Forecast**: Scroll down to view the 5-day forecast
 
-To learn more about developing your project with Expo, look at the following resources:
+## API Reference
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+This app uses the [OpenWeatherMap API](https://openweathermap.org/api):
+- Current Weather Data
+- 5 Day / 3 Hour Forecast
 
-## Join the community
+## License
 
-Join our community of developers creating universal apps.
+This project is open source and available under the MIT License.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Acknowledgments
+
+- Weather data provided by [OpenWeatherMap](https://openweathermap.org/)
+- Built with [Expo](https://expo.dev)
