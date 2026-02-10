@@ -38,7 +38,7 @@ A cross-platform weather application built with React Native and Expo. Get real-
 1. **Clone the repository**
 
    ```bash
-   git clone <your-repo-url>
+   git clone <https://github.com/jespernapp/WeatherApp>
    cd NewNativeTestApp
    ```
 
